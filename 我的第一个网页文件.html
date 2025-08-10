@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Web</title>
+    <style>
+      .BodyS {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+      }
+      .Titles {
+        display: flex;
+        height: 90px;
+        width: 100%;
+        background-color: #eee;
+        justify-content: center;
+        align-items: center;
+      }
+      .Texts {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        padding: 30px;
+        width: 90%;
+        max-width: 650px;
+        min-height: 65vh;
+        letter-spacing: 1px;
+        line-height: 2;
+        margin: 35px;
+        border-radius: 28px;
+        background-color: #eeeeeef7;
+        flex-direction: column;
+      }
+      .Ends {
+        display: flex;
+        width: 100%;
+        height: 100px;
+        background-color: #eee;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      .About {
+        font-size: 25px;
+        letter-spacing: 5px;
+        display: flex;
+        justify-content: center;
+      }
+      @media (max-width: 768px) {
+        .Titles {
+          border-radius: 0;
+          width: 100%;
+          padding: 0 10px;
+        }
+        
+        .Ends {
+          border-radius: 0;
+          width: 100%;
+          padding: 0 10px;
+        }
+      }
+      hr {
+        width: 100%;
+      }
+      .Going {
+        width: 50px; height: 50px;
+      }
+      .Going img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+      .Container {
+        display: flex;
+        justify-content: center;
+        gap: 50px; 
+        flex-wrap: wrap;
+}
+    </style>
+  </head>
+
+  <body class="BodyS">
+    <header class="Titles">
+      <img src="Logo.png" alt="Logo" height="70px" />
+    </header>
+    <main class="Texts">
+      <p>
+        你好啊! 这是我的个人网站V1版本，用于展示个人网站的编写和部署，
+        以此来体现学习HTML的成果以及网站制作基础。
+      </p>
+      <hr />
+      <p class="About">
+          <b>联系我</b> <img src="修饰.svg" style="width: 35px; height: 55px;"></img>
+      </p>
+      <div class="Container">
+      <!-- Bilibili 跳转 -->
+      <a
+        href="https://space.bilibili.com/1422594048"
+        rel="noreferrer"
+        target="_blank"
+        title="哔哩哔哩"
+        class="Going"
+      >
+        <img src="Bilibbili跳转.svg"></img>
+      </a>
+      <!-- 微博跳转 -->
+      <a 
+        href="https://weibo.com/u/8019187081" 
+        rel="noreferrer" 
+        target="_blank" 
+        title="微博"
+        class="Going"
+      >
+        <img src="微博跳转.svg"></img>
+      </a>
+      <!-- 洛谷跳转 -->
+      <a 
+        href="https://www.douyin.com/user/self?from_tab_name=main" 
+        rel="noreferrer" 
+        target="_blank" 
+        title="抖音"
+        class="Going"
+      >
+        <img src="TikTok.svg"></img>
+      </a>
+      <!-- Github跳转 -->
+      <a 
+        href="https://github.com/DreLighT-W?tab=projects" 
+        rel="noreferrer" 
+        target="_blank" 
+        title="Github"
+        class="Going"
+      >
+        <img src="Github.svg"></img>
+      </a>
+      </div>
+    </main>
+    <footer class="Ends">
+      <p></p>
+    </footer>
+  </body>
+</html>
